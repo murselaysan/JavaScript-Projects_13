@@ -9,6 +9,8 @@ document.querySelector('.guess').value = 23;
 console.log(document.querySelector('.guess').value);
 */
 
+
+
 let secretNumber = Math.trunc(Math.random() * 50) + 1;
 let score = 10;
 let highscore = 0;
@@ -17,6 +19,7 @@ let winner=false;
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
+
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
