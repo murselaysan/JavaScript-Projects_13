@@ -15,6 +15,7 @@ for (var i = 0; i<numberOfDrumBtn; i++) {
 
 }
 
+
 document.addEventListener("keypress", function(event) {
 
   makeSound(event.key);
@@ -22,6 +23,7 @@ document.addEventListener("keypress", function(event) {
   buttonAnimation(event.key);
 
 });
+
 
 function makeSound(key) {
   switch (key) {
